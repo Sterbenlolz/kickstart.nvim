@@ -1,6 +1,18 @@
-vim.pack.add {
-  'https://github.com/nvim-lua/plenary.nvim',
-  'https://github.com/kdheepak/lazygit.nvim',
-}
-
-vim.keymap.set('n', '<leader>lg', '<cmd>LazyGit<cr>', { desc = 'Open LazyGit' })
+-- ============================================================
+-- DEPRECATED: This file is now replaced by Snacks' built-in LazyGit
+-- integration (see `lua/custom/plugins/snacks.lua`).
+--
+-- Snacks provides:
+--   - LazyGit in a float
+--   - Colorscheme auto-sync with Neovim
+--   - Useful keymaps
+--
+-- The old <leader>lg keymap is preserved via `Snacks.lazygit()` in snacks.lua
+-- ============================================================
+--
+-- vim.pack.add {
+--   'https://github.com/nvim-lua/plenary.nvim',
+--   'https://github.com/kdheepak/lazygit.nvim',
+-- }
+--
+-- vim.keymap.set('n', '<leader>lg', '<cmd>LazyGit<cr>', { desc = 'Open LazyGit' })

@@ -19,5 +19,15 @@ require('neo-tree').setup {
     filtered_items = {
       visible = true,
     },
+    -- Watch the filesystem for changes and automatically refresh the tree.
+    -- This makes NeoTree reflect file additions/removals/renames on disk
+    -- regardless of which window is focused.
+    watcher = {
+      -- Debounce interval in milliseconds; lower = more responsive.
+      -- Default is 250ms. Keep it low so changes appear quickly.
+      debounce_ms = 100,
+      -- Include dotfiles (hidden files) in the watch.
+      watch_dotfiles = true,
+    },
   },
 }

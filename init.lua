@@ -833,6 +833,15 @@ do
       -- See `:help blink-cmp-config-keymap` for defining your own keymap
       preset = 'default',
 
+      -- Enter key accepts the currently selected LSP completion item.
+      -- NOTE: while codecompanion's inline window is open, use <C-^> (or
+      -- the remapped key below) to accept a suggestion instead — Enter is
+      -- owned by blink.cmp here and would insert a newline in the code.
+      selection = {
+        enabled = true,
+        selection = { key = '<CR>', mode = 'i' },
+      },
+
       -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
       --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
     },
