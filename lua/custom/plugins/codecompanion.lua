@@ -79,13 +79,6 @@ require('codecompanion').setup {
     },
     inline = {
       adapter = 'ollama',
-      -- Enter is owned by blink.cmp (LSP completion accept),
-      -- so use <C-y> ([y]es) to accept a suggestion while the inline window is open.
-      -- <Esc> still dismisses, <Tab>/<S-Tab> still cycle suggestions.
-      keymaps = {
-        accept = '<Enter>',
-        send = { modes = { i = '<Enter>' } },
-      },
     },
   },
 }
